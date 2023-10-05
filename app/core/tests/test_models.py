@@ -31,7 +31,7 @@ class TestModels(TestCase):
             self.assertEqual(user.email, expected)
 
     def test_new_user_without_email_throws(self):
-        with self.assertRaises(ValueError) as ve:
+        with self.assertRaises(ValueError):
             get_user_model().objects.create_user('', 'test123')
 
     def test_create_super_user(self):
