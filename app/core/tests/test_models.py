@@ -3,6 +3,7 @@ from django.contrib.auth import get_user_model
 from decimal import Decimal
 from core import models
 
+
 class TestModels(TestCase):
 
     def test_create_user_with_email_successful(self):
